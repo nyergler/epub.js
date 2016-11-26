@@ -254,6 +254,7 @@ Book.prototype.load = function (path) {
  * @return {string}          the resolved path string
  */
 Book.prototype.resolve = function (path, absolute) {
+	path = path || '';
 	var resolved = path;
 	var isAbsolute = (path.indexOf('://') > -1);
 
