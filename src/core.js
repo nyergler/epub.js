@@ -64,7 +64,7 @@ Url.prototype.resolve = function (what) {
 	}
 
 	fullpath = path.resolve(this.directory, what);
-	return this.origin + fullpath;
+	return (this.origin !== 'null' ? this.origin : this.protocol + '//') + fullpath;
 };
 
 Url.prototype.relative = function (what) {
