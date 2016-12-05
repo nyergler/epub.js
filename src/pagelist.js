@@ -29,10 +29,10 @@ PageList.prototype.parse = function(xml) {
 
 	if(html) {
 		this.toc = this.parseNav(xml);
-	} else if(ncx){ // Not supported
-		// this.toc = this.parseNcx(xml);
-		return;
-	}
+	// } else if(ncx){ // Not supported
+	// 	// this.toc = this.parseNcx(xml);
+	// 	return;
+	// }
 
 };
 
